@@ -131,7 +131,6 @@ padding: 2rem;
 .locales__barrio {
     list-style-type: none;
     font-size: 1rem;
-    padding-left: 10rem;
 }
 
 .barrio__colegiales, .barrio__nunez {
@@ -344,10 +343,6 @@ padding: 2rem;
             "gaseosa agua";    
     }
 
-    .locales__lista {        
-        flex-direction: column;
-    }
-
     footer {
         flex-wrap: wrap;
     }
@@ -370,6 +365,15 @@ padding: 2rem;
 
     .wallstreet__header{
         display: none;
+    }
+
+    .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
+        margin: 0;
+        padding: 0;
+    }
+
+    .locales__mapa {
+        width: 50%;
     }
 
     .nosotros__imagen {
