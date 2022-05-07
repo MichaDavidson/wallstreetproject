@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $verdemanzana;
+    font-size: 0.6rem;
+    color: white;
+    padding: 0.5rem;}
+
+.footer__primero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.footer__logo {
+    width: 2.5rem;
+    height:2.5rem;}
+
+.footer__whatsapp, .footer__facebook, .footer__instagram {
+    width: 2rem;
+    height:2rem;}

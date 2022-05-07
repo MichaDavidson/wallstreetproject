@@ -1,0 +1,17 @@
+.oportunidades__container {
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+    min-height: 25rem;
+}
+.oportunidades__texto {
+    text-align: justify;
+    color: white;
+    padding: 3rem;
+}
+
+.oportunidades__enviar {
+    border: none;
+    background-color: $verdemanzana;
+}
+

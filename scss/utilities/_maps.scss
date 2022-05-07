@@ -1,0 +1,12 @@
+$locales: (
+belgrano:red,
+nunez: violet,
+colegiales: brown,
+urquiza: pink,
+);
+
+@each $local, $color in $locales {
+    .barrio__#{$local} {
+        color: $color;
+    }
+}

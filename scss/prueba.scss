@@ -1,59 +1,138 @@
-$verdemanzana: #8fb339;
+@import 'utilities/fonts';
+@import 'utilities/variables';
+@import 'utilities/extend';
+@import 'utilities/mixins';
+@import 'utilities/maps';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'pages/index';
+@import 'pages/menu';
+@import 'pages/locales';
+@import 'pages/nosotros';
+@import 'pages/oportunidades';
 
-.header__wallstreet {
-    background-color: $verdemanzana;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.nav-item {
-    background-color: $verdemanzana;
+html {
+    font-size: 62,5%;
+    width: 100%;
+    height: 100%;
 }
 
-footer {
-    background-color: $verdemanzana;
+a{
+    text-decoration: none;}
+
+p {
+    margin: 0;
+}
+h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    font-family: 'Lobster', cursive;
 }
 
-.menu__fotos {
-    border: solid $verdemanzana;
+body {
+    background-color: white;
+    height: 100vh;}
+
+.h1__titulo {
+    text-align: center;
+    background-image: url(../images/fondotitulospared.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 14rem;
+    font-weight: bolder;
+    vertical-align:middle;
 }
 
-.menu__hamburguesas, .menu__bebidas, .menu__acompanantes {
-    background-color: $verdemanzana;
+.h1__titulotexto {
+    transform:translateY(8rem);
+    color: white;
 }
 
-// mapa
+/* media query especial navbar  */
 
-$locales: (
-belgrano:red,
-nunez: violet,
-colegiales: brown,
-urquiza: pink,
-);
+@media (max-width:992px) {
 
-@each $local, $color in $locales {
-    .barrio__#{$local} {
-        color: $color;
+    .nav-item {
+        width: fit-content;
+        padding: 0.5rem;
+    }
+
+}
+/* media query tablet  */
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    .h1__titulo {
+        display: none;
+    }
+
+    .menu__container {
+        grid-template-areas: 
+            "burga burga"
+            "bronx queens"
+            "manhattan brooklyn"
+            "bigapple wallstreet"
+            "side side"
+            "papas batatas"
+            "bebida bebida"
+            "gaseosa agua";    
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+    
+    .footer__primero {
+        flex-wrap: wrap;
+    }
+    
+    .footer__redes {
+        flex-wrap: wrap;
     }
 }
 
-// extend
+/* media query mobile  */
+    
+@media (max-width:360px) {
+   html {
+       font-size: 50%;
+    }
 
-.oportunidades__enviar {
-    @extend .header__wallstreet;
-    color: pink;
+    .wallstreet__header{
+        display: none;
+    }
+
+    .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
+        margin: 0;
+        padding: 0;
+    }
+
+    .locales__mapa {
+        width: 50%;
+    }
+
+    .nosotros__imagen {
+        display: none;
+    }
+
+    .oportunidades__enviar {
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    .footer__redes {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }
-
-// mixin
-
-@mixin desafiocoder ($color, $fontsize) {
-    color: $color;
-    font-size: $fontsize;
-}
-
-.menu__papas {
-    @include desafiocoder(red, 20rem)
-}
-
-
-
-
-
