@@ -1,4 +1,4 @@
-.header__wallstreet {
+.header__wallstreet, .oportunidades__enviar {
   background-color: #8fb339; }
 
 .nav-item {
@@ -13,5 +13,21 @@ footer {
 .menu__hamburguesas, .menu__bebidas, .menu__acompanantes {
   background-color: #8fb339; }
 
+.barrio__belgrano {
+  color: red; }
+
+.barrio__nunez {
+  color: violet; }
+
+.barrio__colegiales {
+  color: brown; }
+
+.barrio__urquiza {
+  color: pink; }
+
 .oportunidades__enviar {
-  background-color: #8fb339; }
+  color: pink; }
+
+.menu__papas {
+  color: red;
+  font-size: 20rem; }

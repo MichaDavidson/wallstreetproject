@@ -20,6 +20,40 @@ footer {
     background-color: $verdemanzana;
 }
 
-.oportunidades__enviar {
-    background-color: $verdemanzana;
+// mapa
+
+$locales: (
+belgrano:red,
+nunez: violet,
+colegiales: brown,
+urquiza: pink,
+);
+
+@each $local, $color in $locales {
+    .barrio__#{$local} {
+        color: $color;
+    }
 }
+
+// extend
+
+.oportunidades__enviar {
+    @extend .header__wallstreet;
+    color: pink;
+}
+
+// mixin
+
+@mixin desafiocoder ($color, $fontsize) {
+    color: $color;
+    font-size: $fontsize;
+}
+
+.menu__papas {
+    @include desafiocoder(red, 20rem)
+}
+
+
+
+
+
