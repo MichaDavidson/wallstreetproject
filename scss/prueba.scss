@@ -1,6 +1,25 @@
-@import "pages/contacto";
-@import "pages/oportunidades";
-@import "pages/menu";
-@import "pages/nosotros";
-@import "pages/index";
-@import "pages/locales";
+$verdemanzana: #8fb339;
+
+.header__wallstreet {
+    background-color: $verdemanzana;
+}
+
+.nav-item {
+    background-color: $verdemanzana;
+}
+
+footer {
+    background-color: $verdemanzana;
+}
+
+.menu__fotos {
+    border: solid $verdemanzana;
+}
+
+.menu__hamburguesas, .menu__bebidas, .menu__acompanantes {
+    background-color: $verdemanzana;
+}
+
+.oportunidades__enviar {
+    background-color: $verdemanzana;
+}

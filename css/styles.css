@@ -52,7 +52,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #8fb339;
     border-radius: 20px;
     padding: 0.3rem;
 }
@@ -70,7 +69,6 @@ body {
 
 .nav-item {
     margin: 0.5rem;
-    background-color: #8fb339;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -93,7 +91,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #8fb339;
     font-size: 0.6rem;
     color: white;
     padding: 0.5rem;}
@@ -173,7 +170,6 @@ padding: 2rem;
 .menu__fotos {
     height: 6rem;
     width: 6rem;
-    border: solid #8fb339;
     border-radius: 80px;
 }
 
@@ -196,7 +192,6 @@ padding: 2rem;
     flex-direction: row;
     font-size: 1.8rem;
     padding: 0.6rem;
-    background-color: #8fb339;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -297,7 +292,6 @@ padding: 2rem;
 }
 
 .oportunidades__enviar {
-    background-color: #8fb339;
     border: none;
 }
 
