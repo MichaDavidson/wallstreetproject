@@ -33,9 +33,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTANOS</a>
-                    </li>
                     </ul>
                 </div>
             </div>
@@ -55,13 +52,43 @@
                 <img class="col-12 col-sm-4 col-md-4 col-lg-4 nosotros__imagen" src="../images/nosotros.jpg" alt="burger in the making">
             </div>
         </main>
-        <footer>
-            <div class="footer__primero">
-                <a href="../index.html"><img class="footer__logo" src="../images/logo.png" alt="logo"></a>
-                <p class="footer__texto">WALL STREET BURGERS. TODOS LOS DERECHOS RESERVADOS 1992-2022.</p>
+        <section class="container-fluid footer__primerparte">
+            <div class="row">
+                <div class="col-6 footer__suscripcion">
+                    <p class="suscripcion__texto">Seguinos y disfrutá de nuestros beneficios...</p>
+                    <p>Suscribite a nuestro newsletter y recibí las últimas novedades, promociones y descuentos.</p>
+                    <div class="suscripcion__form">
+                        <input type="email" class="form-control suscripcion__input" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com.ar">
+                        <button class="btn btn-primary suscripcion__boton" type="submit">Suscribirme!</button>
+                    </div>
+                </div>
+                <div class="col-6 footer__contacto">
+                    <p class="contacto__texto">Nos encanta saber de vos!</p>
+                    <p>Compartinos tus consultas, comentarios o sugerencias.</p>
+                    <form class="contacto__form" action="">
+                        <input type="name" class="form-control contacto__input" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                        <input type="email" class="form-control contacto__input" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                        <textarea class="form-control contacto__input" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu mensaje!"></textarea>
+                        <button class="btn btn-primary contacto__boton" type="submit">Enviar! </button>
+                    </form>
+                </div>
             </div>
-            <div class="footer__redes">
-                <a href="oportunidades.html">OPORTUNIDADES</a>
+        </section>
+        <footer class="footer__segundaparte">
+            <div class="segundaparte__logo">
+                <a href="../index.html"><img class="footer__logo" src="../images/logo.png" alt="logo"></a>
+                <a href="../index.html" class="mx-auto text-center footer__wallstreet">Wall Street Burgers</a>
+            </div>
+            <div class="segundaparte__medio">
+                <div class="segundaparte__navbar">
+                    <a class="segundaparte__navitems mb-1 me-2" href="menu.html">MENÚ</a>
+                    <a class="segundaparte__navitems mb-1 ms-2 me-2" href="locales.html">LOCALES</a>
+                    <a class="segundaparte__navitems ms-2 me-2 mb-1" href="nosotros.html">NOSOTROS</a>
+                    <a class="segundaparte__navitems ms-2 mb-1" href="oportunidades.html">OPORTUNIDADES</a>
+                </div>
+                <p class="mt-2">WALL STREET BURGERS. TODOS LOS DERECHOS RESERVADOS 1992-2022.</p>
+            </div>
+            <div class="segundaparte__redes">
                 <a href=""><img class="footer__facebook" src="../images/facebook.png" alt="facebook"></a>
                 <a href=""><img class="footer__instagram" src="../images/instagram.png" alt="instagram"></a>
                 <a href=""><img class="footer__whatsapp" src="../images/whatsapp.png" alt=""></a>

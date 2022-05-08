@@ -1,6 +1,5 @@
 @import 'utilities/fonts';
 @import 'utilities/variables';
-@import 'utilities/extend';
 @import 'utilities/mixins';
 @import 'utilities/maps';
 @import 'layout/footer';
@@ -86,18 +85,6 @@ body {
             "bebida bebida"
             "gaseosa agua";    
     }
-
-    footer {
-        flex-wrap: wrap;
-    }
-    
-    .footer__primero {
-        flex-wrap: wrap;
-    }
-    
-    .footer__redes {
-        flex-wrap: wrap;
-    }
 }
 
 /* media query mobile  */
@@ -128,11 +115,21 @@ body {
         margin-bottom: 2rem;
     }
 
-    footer {
-        flex-direction: column;
-    }
-    .footer__redes {
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
+.footer__segundaparte {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.segundaparte__logo {
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.footer__wallstreet {
+    padding:0.6rem;
+}
+.segundaparte__medio {
+    margin-bottom: 1rem;
+}
 }

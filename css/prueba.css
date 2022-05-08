@@ -15,31 +15,92 @@
 .barrio__urquiza {
   color: pink; }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #8fb339;
-  font-size: 0.6rem;
+.footer__primerparte {
+  font-size: 1rem;
+  background-color: black;
   color: white;
-  padding: 0.5rem; }
+  text-align: center;
+  padding: 1rem; }
 
-.footer__primero {
+.suscripcion__form {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center; }
 
-.footer__redes {
+.suscripcion__texto, .contacto__texto {
+  font-family: 'Lobster', cursive;
+  font-size: 1.3rem; }
+
+.suscripcion__input {
+  width: 50%;
+  margin: 1rem; }
+
+.suscripcion__boton, .contacto__boton {
+  background-color: #8fb339;
+  border: none;
+  font-family: 'Lobster', cursive;
+  height: max-content; }
+
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contacto__input {
+  width: 50%;
+  margin: 1rem; }
+
+.footer__segundaparte {
+  display: flex;
+  flex-direction: row;
+  background-color: #8fb339;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  justify-content: space-between; }
+
+.segundaparte__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.footer__logo {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0.2rem; }
+
+.footer__wallstreet {
+  font-size: 1.5rem;
+  font-family: 'Lobster', cursive;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 0.2rem; }
+
+.segundaparte__medio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.segundaparte__navbar {
+  display: flex;
+  flex-direction: row; }
+
+.segundaparte__navitems {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px; }
+
+.segundaparte__redes {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 20%; }
-
-.footer__logo {
-  width: 2.5rem;
-  height: 2.5rem; }
+  width: 10rem; }
 
 .footer__whatsapp, .footer__facebook, .footer__instagram {
   width: 2rem;
@@ -204,7 +265,7 @@ footer {
 .belgrano__detalles, .colegiales__detalles, .nunez__detalles, .urquiza__detalles {
   list-style-type: none; }
 
-.locales__imagen, .oportunidades__imagen {
+.locales__imagen {
   margin: 0;
   padding: 0;
   padding-top: 2rem; }
@@ -231,6 +292,11 @@ footer {
 .oportunidades__enviar {
   border: none;
   background-color: #8fb339; }
+
+.oportunidades__imagen {
+  margin: 2rem;
+  padding-left: 0;
+  padding-right: 0; }
 
 * {
   margin: 0;
@@ -282,13 +348,7 @@ body {
   .h1__titulo {
     display: none; }
   .menu__container {
-    grid-template-areas: "burga burga" "bronx queens" "manhattan brooklyn" "bigapple wallstreet" "side side" "papas batatas" "bebida bebida" "gaseosa agua"; }
-  footer {
-    flex-wrap: wrap; }
-  .footer__primero {
-    flex-wrap: wrap; }
-  .footer__redes {
-    flex-wrap: wrap; } }
+    grid-template-areas: "burga burga" "bronx queens" "manhattan brooklyn" "bigapple wallstreet" "side side" "papas batatas" "bebida bebida" "gaseosa agua"; } }
 
 /* media query mobile  */
 @media (max-width: 360px) {
@@ -305,8 +365,14 @@ body {
     display: none; }
   .oportunidades__enviar {
     margin-bottom: 2rem; }
-  footer {
-    flex-direction: column; }
-  .footer__redes {
-    flex-wrap: nowrap;
-    justify-content: center; } }
+  .footer__segundaparte {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .segundaparte__logo {
+    flex-direction: column;
+    margin-bottom: 1rem; }
+  .footer__wallstreet {
+    padding: 0.6rem; }
+  .segundaparte__medio {
+    margin-bottom: 1rem; } }
