@@ -372,6 +372,8 @@ body {
   .segundaparte__logo {
     flex-direction: column;
     margin-bottom: 1rem; }
+  .footer__logo {
+    margin: 0.6rem; }
   .footer__wallstreet {
     padding: 0.6rem; }
   .segundaparte__medio {
