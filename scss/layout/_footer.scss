@@ -1,9 +1,27 @@
 .footer__primerparte {
     font-size: 1rem;
+    background-image: url(../../images/wallpaper.webp);
+    color:white;
+    text-align: center;
+    margin: 1rem;
+    width: auto;
+}
+
+.footer__primerparteindex {
+    font-size: 1rem;
     background-color: black;
     color:white;
     text-align: center;
     padding: 1rem;
+}
+
+.footer__suscripcion, .footer__contacto {
+    background-color: black;
+}
+
+.suscripcion__texto {
+    font-family: 'Lobster', cursive;
+    font-size: 1.3rem;
 }
 
 .suscripcion__form {
@@ -11,11 +29,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.suscripcion__texto {
-    font-family: 'Lobster', cursive;
-    font-size: 1.3rem;
 }
 
 .suscripcion__input {

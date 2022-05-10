@@ -1,9 +1,7 @@
 @import 'utilities/fonts';
 @import 'utilities/variables';
-@import 'utilities/mixins';
-@import 'utilities/maps';
-@import 'layout/footer';
 @import 'layout/header';
+@import 'layout/footer';
 @import 'pages/index';
 @import 'pages/menu';
 @import 'pages/locales';
@@ -89,7 +87,7 @@ body {
 
 /* media query mobile  */
     
-@media (max-width:360px) {
+@media (max-width:400px) {
    html {
        font-size: 50%;
     }
@@ -101,14 +99,6 @@ body {
     .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
         margin: 0;
         padding: 0;
-    }
-
-    .locales__mapa {
-        width: 50%;
-    }
-
-    .nosotros__imagen {
-        display: none;
     }
 
     .oportunidades__enviar {

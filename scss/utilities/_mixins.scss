@@ -1,8 +1,0 @@
-@mixin desafiocoder ($color, $fontsize) {
-    color: $color;
-    font-size: $fontsize;
-}
-
-.menu__papas {
-    @include desafiocoder(red, 20rem)
-}
