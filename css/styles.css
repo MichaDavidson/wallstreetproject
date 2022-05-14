@@ -37,7 +37,6 @@
 
 .footer__primerparte {
   font-size: 1rem;
-  background-image: url(../../images/wallpaper.webp);
   color: white;
   text-align: center;
   width: auto; }
@@ -49,17 +48,9 @@
   text-align: center;
   padding: 1rem; }
 
-.primeraparteindex {
-  justify-content: space-around; }
-
-.primeraparteindex__pages {
-  justify-content: space-around; }
-
 .footer__suscripcion, .footer__contacto {
   background-color: black;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
+  padding: 1rem; }
 
 .suscripcion__texto, .contacto__texto {
   font-family: 'Lobster', cursive;
@@ -244,6 +235,10 @@
   grid-area: side;
   margin-top: 1.5rem; }
 
+.divmenu {
+  height: 0.5rem;
+  background-color: #8fb339; }
+
 .pagina__locales {
   background-color: black;
   color: white; }
@@ -380,7 +375,7 @@ body {
     padding-top: 2rem; }
   .oportunidades__form {
     padding-top: 0;
-    padding-left: 12rem; }
+    padding-left: 11rem; }
   .footer__segundaparte {
     flex-direction: column;
     justify-content: center;
