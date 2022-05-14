@@ -27,6 +27,10 @@
 .navbar-collapse {
   flex-grow: 0; }
 
+.navbar-toggler {
+  border: solid 5px;
+  background-color: #d0f28286; }
+
 .navbar {
   background-image: url(../images/wallpaper.webp);
   height: 6.5rem; }
@@ -36,7 +40,6 @@
   background-image: url(../../images/wallpaper.webp);
   color: white;
   text-align: center;
-  margin: 1rem;
   width: auto; }
 
 .footer__primerparteindex {
@@ -46,8 +49,17 @@
   text-align: center;
   padding: 1rem; }
 
+.primeraparteindex {
+  justify-content: space-around; }
+
+.primeraparteindex__pages {
+  justify-content: space-around; }
+
 .footer__suscripcion, .footer__contacto {
-  background-color: black; }
+  background-color: black;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .suscripcion__texto, .contacto__texto {
   font-family: 'Lobster', cursive;
@@ -354,6 +366,8 @@ body {
 @media (max-width: 400px) {
   html {
     font-size: 50%; }
+  .header__wallstreet {
+    border: solid black 2px; }
   .wallstreet__header {
     display: none; }
   .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
@@ -361,6 +375,12 @@ body {
     padding: 0; }
   .oportunidades__enviar {
     margin-bottom: 2rem; }
+  .oportunidades__texto {
+    min-height: 0;
+    padding-top: 2rem; }
+  .oportunidades__form {
+    padding-top: 0;
+    padding-left: 12rem; }
   .footer__segundaparte {
     flex-direction: column;
     justify-content: center;
