@@ -48,6 +48,16 @@
   text-align: center;
   padding: 1rem; }
 
+.primerparte__pages {
+  justify-content: space-around;
+  background-image: url(../images/wallpaper.webp); }
+
+.footer__suscripcionpag, .footer__contactopag {
+  background-color: black;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 40px; }
+
 .footer__suscripcion, .footer__contacto {
   background-color: black;
   padding: 1rem; }
@@ -58,7 +68,7 @@
 
 .suscripcion__form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
 
@@ -235,50 +245,50 @@
   grid-area: side;
   margin-top: 1.5rem; }
 
-.divmenu {
-  height: 0.5rem;
-  background-color: #8fb339; }
-
 .pagina__locales {
   background-color: black;
   color: white; }
 
-.locales__barrio {
-  list-style-type: none;
-  font-size: 1rem; }
+.locales__barrios {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.barrio__colegiales, .barrio__nunez {
-  line-height: 1.3rem;
-  list-style-type: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: white; }
+.belgrano, .colegiales, .nunez, .urquiza {
+  border: 0.5rem solid #8fb339;
+  border-radius: 40px;
+  text-align: center;
+  width: 30rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  background-color: black; }
 
-.barrio__belgrano {
-  line-height: 1.3rem;
-  list-style-type: none;
-  margin-bottom: 1rem; }
+.belgrano__titulo, .colegiales__titulo, .urquiza__titulo, .nunez__titulo {
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  color: #8fb339; }
 
-.barrio__urquiza {
-  line-height: 1.3rem;
-  list-style-type: none;
-  margin-top: 1rem; }
-
-.belgrano__detalles, .colegiales__detalles, .nunez__detalles, .urquiza__detalles {
-  list-style-type: none; }
+.colegiales__btn, .belgrano__btn, .nunez__btn, .urquiza__btn {
+  font-family: 'Lobster', cursive;
+  background-color: #8fb339;
+  margin-top: 0.5rem; }
 
 .locales__imagen {
   margin: 0;
   padding: 0;
   padding-top: 2rem; }
 
-.nosotros__texto {
+.nosotros__historia, .nosotros__vegan {
   text-align: justify;
   padding: 4rem; }
 
-.nosotros__imagen {
+.nosotros__historiaimg, .nosotros__veganimg {
   padding: 0;
   margin: 0; }
+
+.h2__vegan, .h2__historia {
+  font-family: 'Lobster', cursive;
+  text-align: center; }
 
 .oportunidades__container {
   background-color: black; }
@@ -352,8 +362,6 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 60%; }
-  .h1__titulo {
-    display: none; }
   .menu__container {
     grid-template-areas: "burga burga" "bronx queens" "manhattan brooklyn" "bigapple wallstreet" "side side" "papas batatas" "bebida bebida" "gaseosa agua"; } }
 
@@ -361,13 +369,11 @@ body {
 @media (max-width: 400px) {
   html {
     font-size: 50%; }
-  .header__wallstreet {
-    border: solid black 2px; }
-  .wallstreet__header {
-    display: none; }
   .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
     margin: 0;
     padding: 0; }
+  .nosotros__veganimg {
+    order: -1; }
   .oportunidades__enviar {
     margin-bottom: 2rem; }
   .oportunidades__texto {

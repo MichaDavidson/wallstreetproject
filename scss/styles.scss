@@ -25,6 +25,7 @@ a{
 p {
     margin: 0;
 }
+
 h1 {
     font-size: 5rem;
     margin-bottom: 0;
@@ -68,10 +69,6 @@ body {
         font-size: 60%;
     }
 
-    .h1__titulo {
-        display: none;
-    }
-
     .menu__container {
         grid-template-areas: 
             "burga burga"
@@ -92,17 +89,13 @@ body {
        font-size: 50%;
     }
 
-    .header__wallstreet {
-        border: solid black 2px;
-    }
-
-    .wallstreet__header{
-        display: none;
-    }
-
     .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
         margin: 0;
         padding: 0;
+    }
+
+    .nosotros__veganimg {
+        order:-1;
     }
 
     .oportunidades__enviar {

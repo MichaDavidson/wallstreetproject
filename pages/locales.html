@@ -40,38 +40,43 @@
         <h1 class="h1__titulo"><p class="h1__titulotexto">Locales</p></h1>
         <main class="pagina__locales">
             <div class="container-fluid">
-                <section class="row">
-                    <ul class="col-6 col-sm-6 locales__barrio ps-5 pt-4">
-                        <li class="barrio__belgrano"><b>BELGRANO</b>
-                            <ul class="belgrano__detalles">
-                                <li>Vuelta de Obligado 2243</li>
-                                <li>Lunes a Domingos - 11 a 00hs.</li>
-                                <li>+54 9 11 3214-5678</li>
-                            </ul>
-                        </li>
-                        <li class="barrio__colegiales"><b> COLEGIALES</b>
-                            <ul class="colegiales__detalles">
-                                <li>Virrey Aviles 3340</li>
-                                <li>Lunes a Domingos - 11 a 00hs.</li>
-                                <li>+54 9 11 3214-5684</li>
-                            </ul>
-                        </li>
-                        <li class="barrio__nunez"><b>NÚÑEZ</b>
-                            <ul class="nunez__detalles">
-                                <li>O'Higgins 3571</li>
-                                <li>Lunes a Domingos - 11 a 00hs.</li>
-                                <li>+54 9 11 3214-5683</li>
-                            </ul>
-                        </li>
-                        <li class="barrio__urquiza"><b>VILLA URQUIZA</b>
-                            <ul class="urquiza__detalles">
-                                <li>Mendoza 5281</li>
-                                <li>Lunes a Domingos - 11 a 00hs.</li>
-                                <li>+54 9 11 3214-5679</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <iframe class="col-6 col-sm-6 pt-4 pe-5" src="https://www.google.com/maps/d/embed?mid=1VSAxg7McrHE9CL6TlGmQtKNdQVfVAV7t&ehbc=2E312F"></iframe>
+                <section class="locales__barrios row">
+                    <div class="col-12 belgrano">
+                        <h5 class="belgrano__titulo">Wall Street Burgers Belgrano</h5>
+                            <div class="belgrano__detalles">
+                                <p>Vuelta de Obligado 2243, CABA</p>
+                                <p>Lunes a Domingos - 11 a 00hs.</p>
+                                <p>+54 9 11 3214-5678</p>
+                            </div>
+                        <a href="https://www.google.com/maps/dir//Vuelta+de+Obligado+2243,+Buenos+Aires/@-34.5491066,-58.4515584,13z/data=!4m5!4m4!1m1!4e2!1m0!3e0" target="_blank" class="btn belgrano__btn">¿Cómo llego?</a>
+                    </div>
+                    <div class="col-12 colegiales">
+                        <h5 class="colegiales__titulo">Wall Street Burgers Colegiales</h5>
+                            <div class="colegiales__detalles">
+                                <p>Virrey Aviles 3340, CABA</p>
+                                <p>Lunes a Domingos - 11 a 00hs.</p>
+                                <p>+54 9 11 3214-5684</p>
+                            </div>
+                        <a href="https://www.google.com/maps/dir//Virrey+Avil%C3%A9s+3340,+Buenos+Aires/@-34.5748171,-58.4639422,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bcb5d92c2a4c83:0xad7d79740476ecad!2m2!1d-58.4595648!2d-34.5748172!3e0" target="_blank" class="btn colegiales__btn">¿Cómo llego?</a>
+                    </div>
+                    <div class="col-12 nunez">
+                        <h5 class="nunez__titulo">Wall Street Burgers Núñez</h5>
+                            <div class="nunez__detalles">
+                                <p>O'Higgins 3571, CABA</p>
+                                <p>Lunes a Domingos - 11 a 00hs.</p>
+                                <p>+54 9 11 3214-5683</p>
+                            </div>
+                        <a href="https://www.google.com/maps/dir//O'Higgins+3571,+Buenos+Aires/@-34.5473079,-58.4684862,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bcb69de965a04f:0xfcb280c5caeb2646!2m2!1d-58.4641088!2d-34.547308!3e0" target="_blank" class="btn nunez__btn">¿Cómo llego?</a>
+                    </div>
+                    <div class="col-12 urquiza">
+                        <h5 class="urquiza__titulo">Wall Street Burgers Urquiza</h5>
+                            <div class="urquiza__detalles">
+                                <p>Mendoza 5281, CABA</p>
+                                <p>Lunes a Domingos - 11 a 00hs.</p>
+                                <p>+54 9 11 3214-5679</p>
+                            </div>
+                        <a href="https://www.google.com/maps/dir//Mendoza+5281,+C1431CIO+CABA/@-34.5780762,-58.4900979,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bcb6681ad57707:0xe98e80eb1ecbe64f!2m2!1d-58.4857205!2d-34.5780763!3e0" target="_blank" class="btn urquiza__btn">¿Cómo llego?</a>
+                    </div>
                 </section>
                 <div class="row">
                     <img class="col-12 locales__imagen"src="../images/locales.jpg" alt="Locales Wall Street">
@@ -79,8 +84,8 @@
             </div>
         </main>
         <section class="container-fluid footer__primerparte">
-            <div class="row">
-                <div class="col-6 footer__suscripcion">
+            <div class="primerparte__pages row">
+                <div class="col-4 footer__suscripcionpag">
                     <p class="suscripcion__texto">Seguinos y disfrutá de nuestros beneficios...</p>
                     <p>Suscribite a nuestro newsletter y recibí las últimas novedades, promociones y descuentos.</p>
                     <div class="suscripcion__form">
@@ -88,7 +93,7 @@
                         <button class="btn btn-primary suscripcion__boton" type="submit">Suscribirme!</button>
                     </div>
                 </div>
-                <div class="col-6 footer__contacto">
+                <div class="col-4 footer__contactopag">
                     <p class="contacto__texto">Nos encanta saber de vos!</p>
                     <p>Compartinos tus consultas, comentarios o sugerencias.</p>
                     <form class="contacto__form" action="">
