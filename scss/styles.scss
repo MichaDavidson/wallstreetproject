@@ -22,6 +22,10 @@ html {
 a{
     text-decoration: none;}
 
+a:hover {
+    color:white;
+}
+
 p {
     margin: 0;
 }
@@ -84,7 +88,7 @@ body {
 
 /* media query mobile  */
     
-@media (max-width:400px) {
+@media (max-width:500px) {
    html {
        font-size: 50%;
     }

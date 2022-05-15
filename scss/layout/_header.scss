@@ -1,3 +1,11 @@
+.navbar {
+    background-image: url(../images/wallpaper.webp);
+    height: 6.5rem;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
 .header__wallstreet {
     display: flex;
     flex-direction: row;
@@ -33,9 +41,4 @@
 .navbar-toggler {
     border: solid 5px;
     background-color: #d0f28286;
-}
-
-.navbar {
-    background-image: url(../images/wallpaper.webp);
-    height: 6.5rem;
 }

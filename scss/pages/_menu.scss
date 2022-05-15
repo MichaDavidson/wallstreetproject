@@ -1,103 +1,65 @@
 .menu__container {
-    display: grid;
-    grid-template-areas: 
-    "burga burga side side"
-    "bronx queens papas batatas"
-    "manhattan brooklyn bebida bebida"
-    "bigapple wallstreet gaseosa agua";
-    justify-items: center;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: black;
-    color: white;
-}
-.menu__fotos {
-    height: 6rem;
-    width: 6rem;
-    border-radius: 80px;
-    border: solid $verdemanzana;
+    color:white;
 }
 
-.menu__bronx, .menu__queens, .menu__manhattan, .menu__brooklyn, .menu__bigapple, .menu__wallstreet, .menu__papas, .menu__batatas, .menu__gaseosa, .menu__agua {
-    height: 10rem;
-    width: 16rem;
+.burgers__container, .acompanantes__container, .postres__container, .bebidas__container, .nav__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
-.bronx__descripcion, .queens__descripcion, .manhattan__descripcion, .brooklyn__descripcion, .bigapple__descripcion, .wallstreet__descripcion, .papas__descripcion, .batatas__descripcion, .gaseosa__descripcion, .agua__descripcion {
-    text-align: justify;
-    font-size: 0.8rem;
-    margin-left: 0.7rem;
-}
-
-.menu__hamburguesas, .menu__bebidas, .menu__acompanantes {
+.menu__nav {
+    background-color: $verdemanzana;
+    color:white;
     display: flex;
     flex-direction: row;
-    font-size: 1.8rem;
-    padding: 0.6rem;
-    border-radius: 10px;
-    font-weight: bold;
-    background-color: $verdemanzana;
+    justify-content: space-around;
+    font-size: 3rem;
+    border-radius: 30px;
+    font-family: $font; 
+    margin-top: 1rem;
 }
 
-.menu__bronx {
-    grid-area: bronx;
+.menu__burgers, .menu__acompanantes, .menu__bebidas, .menu__postres {
+    background-color: white;
+    color:black;
+    width: 50%;
+    text-align: center;
+    font-family: $font;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 30px;
+    font-size: 3rem;
 }
 
-.menu__queens {
-    grid-area: queens;
+.bronx, .queens, .manhattan, .brooklyn, .bigapple, .wallstreet, .papas, .batatas, .bananasplit, .gaseosas, .agua {
+    margin: 0.5rem;
+    width: 20rem;
+    padding: 0;
 }
 
-.menu__manhattan {
-    grid-area: manhattan;
-}
-
-.menu__brooklyn {
-    grid-area: brooklyn;
-}
-
-.menu__bigapple {
-    grid-area: bigapple;
-    padding-bottom: 1.5rem;
-}
-
-.menu__wallstreet {
-    grid-area: wallstreet;
-    padding-bottom: 1.5rem;
-}
-
-.menu__papas {
-    grid-area: papas;
-}
-
-.menu__batatas {
-    grid-area: batatas;
-}
-
-.menu__gaseosa {
-    grid-area: gaseosa;
-    padding-bottom: 1.5rem;
-}
-
-.menu__agua {
-    grid-area: agua;
-    padding-bottom: 1.5rem;
-}
-
-.menu__hamburguesas {
-    grid-area: burga;
-    margin-top: 1.5rem;
+.brooklyn__img, .manhattan__img, .bronx__img, .queens__img, .bigapple__img, .wallstreet__img, .papas__img, .batatas__img, .coca__img, .agua__img, .postres__img {
+    width: 100%;
+    margin: 0;
+    border-radius: 30px;
 } 
 
-.menu__bebidas {
-    grid-area: bebida;
-    display: flex;
-    flex-direction: row;
+.bronx__titulo, .queens__titulo, .manhattan__titulo, .brooklyn__titulo, .bigapple__titulo, .wallstreet__titulo, .papas__titulo, .batatas__titulo, .postres__titulo, .coca__titulo, .agua__titulo {
+    font-family: $font;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    background-color: $verdemanzana;
+    color: white;
+    border-radius: 30px;
+    padding:0.5rem;
 }
 
-.menu__acompanantes {
-    grid-area: side;
-    margin-top: 1.5rem;
+.bronx__detalles, .queens__detalles, .manhattan__detalles, .brooklyn__detalles, .bigapple__detalles, .wallstreet__detalles, .papas__detalles, .batatas__detalles, .postres__detalles, .coca__detalles, .agua__detalles {
+    margin: 0.5rem;
+    text-align: center;
 }
