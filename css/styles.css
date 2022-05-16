@@ -375,6 +375,10 @@ html {
   width: 100%;
   height: 100%; }
 
+:root {
+  scroll-padding-top: 7.5rem;
+  scroll-behavior: smooth; }
+
 a {
   text-decoration: none; }
 
