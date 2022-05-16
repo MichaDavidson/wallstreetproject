@@ -73,29 +73,44 @@ body {
         font-size: 60%;
     }
 
-    .menu__container {
-        grid-template-areas: 
-            "burga burga"
-            "bronx queens"
-            "manhattan brooklyn"
-            "bigapple wallstreet"
-            "side side"
-            "papas batatas"
-            "bebida bebida"
-            "gaseosa agua";    
-    }
 }
 
 /* media query mobile  */
     
 @media (max-width:500px) {
    html {
-       font-size: 50%;
+       font-size: 58%;
     }
 
     .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
         margin: 0;
         padding: 0;
+    }
+
+    .burgers__container {
+        grid-template-areas: 
+        ". . . . . burga burga . . . . ."
+        ". . . . . bronx queens . . . . ."
+        ". . . . . manhattan brooklyn . . . . ."  
+        ". . . . . bigapple wallstreet . . . . .";
+    }
+    
+    .postres__container {
+        grid-template-areas: 
+        ". . . . . postres postres . . . . ."
+        ". . . . . bananasplit brownie . . . . .";
+    }
+    
+    .bebidas__container {
+        grid-template-areas: 
+        ". . . . . bebidas bebidas . . . . ."
+        ". . . . . coca agua . . . . .";
+    }
+    
+    .acompanantes__container {
+        grid-template-areas: 
+        ". . . . . sides sides . . . . ."
+        ". . . . . papas batatas . . . . .";
     }
 
     .nosotros__veganimg {

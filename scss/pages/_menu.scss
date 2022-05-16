@@ -6,22 +6,121 @@
     color:white;
 }
 
-.burgers__container, .acompanantes__container, .postres__container, .bebidas__container, .nav__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .menu__nav {
     background-color: $verdemanzana;
     color:white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 30px;
     font-family: $font; 
     margin-top: 1rem;
+}
+
+.burgers__container {
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 3;
+    grid-template-areas: 
+    ". . . . burga burga burga burga . . . ."
+    ". . . bronx bronx queens queens manhattan manhattan . . ."
+    ". . . brooklyn brooklyn bigapple bigapple wallstreet wallstreet . . .";
+    justify-items: center;
+}
+
+.postres__container {
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    ". . . . postres postres postres postres . . . ."
+    ". . . . bananasplit bananasplit brownie brownie . . . .";
+    justify-items: center;
+}
+
+.bebidas__container {
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    ". . . . bebidas bebidas bebidas bebidas . . . ."
+    ". . . . coca coca agua agua . . . .";
+    justify-items: center;
+}
+
+.acompanantes__container {
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    ". . . . sides sides sides sides . . . ."
+    ". . . . papas papas batatas batatas . . . .";
+    justify-items: center;
+}
+
+.menu__burgers {
+    grid-area: burga;
+}
+
+.bronx {
+    grid-area: bronx;
+}
+
+.queens {
+    grid-area: queens;
+}
+
+.manhattan {
+    grid-area: manhattan;
+}
+
+.brooklyn {
+    grid-area: brooklyn;
+}
+
+.bigapple {
+    grid-area: bigapple;
+}
+
+.wallstreet {
+    grid-area: wallstreet;
+}
+
+.menu__acompanantes {
+    grid-area: sides;
+}
+
+.papas {
+    grid-area: papas;
+}
+
+.batatas {
+    grid-area: batatas;
+}
+
+.menu__postres {
+    grid-area: postres;
+}
+
+.bananasplit {
+    grid-area: bananasplit;
+}
+
+.brownie {
+    grid-area: brownie;
+}
+
+.menu__bebidas {
+    grid-area: bebidas;
+}
+
+.gaseosas {
+    grid-area: coca;
+}
+
+.agua {
+    grid-area: agua;
 }
 
 .menu__burgers, .menu__acompanantes, .menu__bebidas, .menu__postres {
@@ -33,10 +132,10 @@
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 30px;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
-.bronx, .queens, .manhattan, .brooklyn, .bigapple, .wallstreet, .papas, .batatas, .bananasplit, .gaseosas, .agua {
+.bronx, .queens, .manhattan, .brooklyn, .bigapple, .wallstreet, .papas, .batatas, .bananasplit, .brownie, .gaseosas, .agua {
     margin: 0.5rem;
     width: 20rem;
     padding: 0;
@@ -52,7 +151,7 @@
     font-family: $font;
     text-align: center;
     margin-top: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-color: $verdemanzana;
     color: white;
     border-radius: 30px;
