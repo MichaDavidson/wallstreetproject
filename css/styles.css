@@ -320,6 +320,7 @@
 .colegiales__btn, .belgrano__btn, .nunez__btn, .urquiza__btn {
   font-family: 'Lobster', cursive;
   background-color: #8fb339;
+  color: white;
   margin-top: 0.5rem; }
 
 .locales__imagen {
@@ -430,7 +431,7 @@ body {
 /* media query mobile  */
 @media (max-width: 500px) {
   html {
-    font-size: 58%; }
+    font-size: 62%; }
   .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
     margin: 0;
     padding: 0; }
@@ -442,6 +443,8 @@ body {
     grid-template-areas: ". . . . . bebidas bebidas . . . . ." ". . . . . coca agua . . . . ."; }
   .acompanantes__container {
     grid-template-areas: ". . . . . sides sides . . . . ." ". . . . . papas batatas . . . . ."; }
+  .bronx, .queens {
+    width: 15rem; }
   .nosotros__veganimg {
     order: -1; }
   .oportunidades__enviar {

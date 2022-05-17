@@ -91,7 +91,7 @@ body {
     
 @media (max-width:500px) {
    html {
-       font-size: 58%;
+       font-size: 62%;
     }
 
     .belgrano__detalles, .colegiales__detalles, .urquiza__detalles, .nunez__detalles, .barrio__belgrano, .barrio__colegiales, .barrio__nunez, .barrio__urquiza {
@@ -125,6 +125,9 @@ body {
         ". . . . . papas batatas . . . . .";
     }
 
+    .bronx, .queens {
+        width: 15rem;
+    }
     .nosotros__veganimg {
         order:-1;
     }
