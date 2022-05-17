@@ -1,17 +1,15 @@
 .pagina__locales {
-    // background-image: url(../images/wallpaper.webp);
     background-color: black;
     color: white;
 }
 
 .locales__barrios {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .belgrano, .colegiales, .nunez, .urquiza {
-    border: 0.5rem solid $verdemanzana;
+    border: 0.5rem solid white;
     border-radius: 40px;
     text-align: center;
     width: 30rem;
