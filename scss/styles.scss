@@ -67,6 +67,16 @@ body {
     right: 0.5rem;
 }
 
+.flecha {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: fixed;
+    top: 12rem;
+    right: 0.5rem;
+    background-color: $verdemanzana;
+    border-radius: 50px;
+}
+
 /* media query especial navbar  */
 
 @media (max-width:992px) {
@@ -90,7 +100,8 @@ body {
 /* media query mobile  */
     
 @media (max-width:500px) {
-   html {
+   
+    html {
        font-size: 62%;
     }
 
@@ -99,35 +110,10 @@ body {
         padding: 0;
     }
 
-    .burgers__container {
-        grid-template-areas: 
-        ". . . . . burga burga . . . . ."
-        ". . . . . bronx queens . . . . ."
-        ". . . . . manhattan brooklyn . . . . ."  
-        ". . . . . bigapple wallstreet . . . . .";
-    }
-    
-    .postres__container {
-        grid-template-areas: 
-        ". . . . . postres postres . . . . ."
-        ". . . . . bananasplit brownie . . . . .";
-    }
-    
-    .bebidas__container {
-        grid-template-areas: 
-        ". . . . . bebidas bebidas . . . . ."
-        ". . . . . coca agua . . . . .";
-    }
-    
-    .acompanantes__container {
-        grid-template-areas: 
-        ". . . . . sides sides . . . . ."
-        ". . . . . papas batatas . . . . .";
-    }
-
-    .bronx, .queens {
+    .bronx, .queens, .manhattan, .brooklyn, .bigapple, .wallstreet, .papas, .batatas, .bananasplit, .brownie, .gaseosas, .agua {
         width: 15rem;
     }
+
     .nosotros__veganimg {
         order:-1;
     }

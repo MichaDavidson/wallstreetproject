@@ -6,6 +6,12 @@
     color:white;
 }
 
+.nav__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .menu__nav {
     background-color: $verdemanzana;
     color:white;
@@ -18,109 +24,8 @@
     margin-top: 1rem;
 }
 
-.burgers__container {
-    display: grid;
-    grid-template-columns: 12;
-    grid-template-rows: 3;
-    grid-template-areas: 
-    ". . . . burga burga burga burga . . . ."
-    ". . . bronx bronx queens queens manhattan manhattan . . ."
-    ". . . brooklyn brooklyn bigapple bigapple wallstreet wallstreet . . .";
-    justify-items: center;
-}
-
-.postres__container {
-    display: grid;
-    grid-template-columns: 12;
-    grid-template-rows: 2;
-    grid-template-areas: 
-    ". . . . postres postres postres postres . . . ."
-    ". . . . bananasplit bananasplit brownie brownie . . . .";
-    justify-items: center;
-}
-
-.bebidas__container {
-    display: grid;
-    grid-template-columns: 12;
-    grid-template-rows: 2;
-    grid-template-areas: 
-    ". . . . bebidas bebidas bebidas bebidas . . . ."
-    ". . . . coca coca agua agua . . . .";
-    justify-items: center;
-}
-
-.acompanantes__container {
-    display: grid;
-    grid-template-columns: 12;
-    grid-template-rows: 2;
-    grid-template-areas: 
-    ". . . . sides sides sides sides . . . ."
-    ". . . . papas papas batatas batatas . . . .";
-    justify-items: center;
-}
-
-.menu__burgers {
-    grid-area: burga;
-}
-
-.bronx {
-    grid-area: bronx;
-}
-
-.queens {
-    grid-area: queens;
-}
-
-.manhattan {
-    grid-area: manhattan;
-}
-
-.brooklyn {
-    grid-area: brooklyn;
-}
-
-.bigapple {
-    grid-area: bigapple;
-}
-
-.wallstreet {
-    grid-area: wallstreet;
-}
-
-.menu__acompanantes {
-    grid-area: sides;
-}
-
-.papas {
-    grid-area: papas;
-}
-
-.batatas {
-    grid-area: batatas;
-}
-
-.menu__postres {
-    grid-area: postres;
-}
-
-.bananasplit {
-    grid-area: bananasplit;
-}
-
-.brownie {
-    grid-area: brownie;
-}
-
-.menu__bebidas {
-    grid-area: bebidas;
-}
-
-.gaseosas {
-    grid-area: coca;
-}
-
-.agua {
-    grid-area: agua;
+.burgers__container, .acompanantes__container, .postres__container, .bebidas__container {
+    justify-content: center;
 }
 
 .menu__burgers, .menu__acompanantes, .menu__bebidas, .menu__postres {
