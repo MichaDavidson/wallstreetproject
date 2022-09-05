@@ -1,0 +1,69 @@
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color:white;
+}
+
+.nav__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__nav {
+    background-color: $verdemanzana;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    border-radius: 30px;
+    font-family: $font; 
+    margin-top: 1rem;
+}
+
+.burgers__container, .acompanantes__container, .postres__container, .bebidas__container {
+    justify-content: center;
+}
+
+.menu__burgers, .menu__acompanantes, .menu__bebidas, .menu__postres {
+    background-color: white;
+    color:black;
+    width: 50%;
+    text-align: center;
+    font-family: $font;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 30px;
+    font-size: 2rem;
+}
+
+.bronx, .queens, .manhattan, .brooklyn, .bigapple, .wallstreet, .papas, .batatas, .bananasplit, .brownie, .gaseosas, .agua {
+    margin: 0.5rem;
+    width: 20rem;
+    padding: 0;
+}
+
+.brooklyn__img, .manhattan__img, .bronx__img, .queens__img, .bigapple__img, .wallstreet__img, .papas__img, .batatas__img, .coca__img, .agua__img, .postres__img {
+    width: 100%;
+    margin: 0;
+    border-radius: 30px;
+} 
+
+.bronx__titulo, .queens__titulo, .manhattan__titulo, .brooklyn__titulo, .bigapple__titulo, .wallstreet__titulo, .papas__titulo, .batatas__titulo, .postres__titulo, .coca__titulo, .agua__titulo {
+    font-family: $font;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    background-color: $verdemanzana;
+    color: white;
+    border-radius: 30px;
+    padding:0.5rem;
+}
+
+.bronx__detalles, .queens__detalles, .manhattan__detalles, .brooklyn__detalles, .bigapple__detalles, .wallstreet__detalles, .papas__detalles, .batatas__detalles, .postres__detalles, .coca__detalles, .agua__detalles {
+    margin: 0.5rem;
+    text-align: center;
+}
